@@ -11,4 +11,8 @@ Todo.prototype.count = function () {
 	return this.tasks.length;
 };
 
+Todo.prototype.getTask = function (index) {
+	return this.tasks[index];
+};
+
 module.exports = Todo;
