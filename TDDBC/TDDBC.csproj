@@ -55,6 +55,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="index.html" />
+    <Content Include="jquery-2.0.3.js" />
     <Content Include="SampleTest.js" />
     <Content Include="Todo.js" />
     <Content Include="TodoTest.js" />
