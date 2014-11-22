@@ -56,6 +56,8 @@
     <Content Include="Default.aspx" />
     <Content Include="index.html" />
     <Content Include="SampleTest.js" />
+    <Content Include="Todo.js" />
+    <Content Include="TodoTest.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -65,12 +67,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="index.html.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="index.html.designer.cs">
-      <DependentUpon>index.html.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

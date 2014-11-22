@@ -5,13 +5,35 @@
 <head runat="server">
     <title>TDDBC JS</title>
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <Input type="text">
-        <input type="button" value="TODOに追加">
-    </div>
-    </form>
-</body>
+    <body>
+        <form id="form1" runat="server">
+            <div>
+                <Input type="text" id="task">
+                <input type="button" value="TODOに追加" onClick="addTask();">
+                <div id="TextSpece"/> 
+            </div>
+        </form>
+        
+        <script src="./Todo.js" >
+        </script>
+        <script>
+            var t = new Todo();
+
+			function addTask() {
+				console.log('111');
+				t.addTask(document.getElementById('task').value);				
+				console.log(document.getElementById('task').value);
+				
+				show();
+			}
+			function show(){
+				var msg = "";
+				for(var i = 0 ; i < t.count() ; i++) {
+					msg += t.getTask(i);
+					msg += "\n";
+				}
+				document.getElementById('TextSpece').innerText = msg;
+			}
+        </script>
+    </body>
 </html>
