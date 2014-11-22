@@ -12,6 +12,9 @@ Todo.prototype.count = function () {
 };
 
 Todo.prototype.getTask = function (index) {
+	if ( index < 0 || this.count() <= index) {
+		throw new Error('OutOfRange...');
+	}
 	return this.tasks[index];
 };
 

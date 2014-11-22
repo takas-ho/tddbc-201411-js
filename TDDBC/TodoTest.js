@@ -34,7 +34,11 @@ describe('TodoTest', function () {
 			sut.addTask('HOGE');
             assert.ok( sut.getTask(0) === 'HOGE' );
         });
-		
+        it('範囲外のタスク番号なら例外にする', function () {
+			assert.throws( 
+				function(){ sut.getTask(1);},
+				Error);
+        });
     });
 /*
     describe('.status', function () {
